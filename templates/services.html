@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Services
+{% endblock %}
+
+{% block main %}
+    <section class="container border bg-light">
+        <div class="row align-items-center">
+            <div class="col-lg pl-0">
+                <img class="img-fluid" alt="simulator" src="{{ url_for('static', filename='images/simulator.png') }}">
+            </div>
+            <div class="col-lg">
+                <h2>Boeing B737 NG Flight Simulator</h2>
+                <p>
+                    Fatouta Consultancy invites you to take to the
+                    skies on Dream Aero's Boeing B737 NG flight
+                    simulator, located in Dubai. Whether you are a
+                    pilot practicing for an exam, or an engineer
+                    rehearsing an engine run, we can help you.
+                    Almost all parameters of the simulator meet the
+                    Doc 9625 ICAO FSTD Type VII requirements, offering an
+                    authentic experience at a low cost.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container border bg-light">
+        <div class="row align-items-center">
+            <div class="col-lg px-0">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/marketing_management.jpg') }}" alt="marketing management">
+            </div>
+            <div class="col-lg">
+                <h2>Marketing Management</h2>
+                <p>
+                    We work with all aviation businesses, from
+                    airlines to maintenance or training organisations,
+                    to market your products and services. We help
+                    attract and retain the right customers, by
+                    providing advice on planning, pricing, and sale
+                    outlets. Our wide network and partnerships are
+                    what differentiate us, as they allow us to reach
+                    potential customers imediately.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container border bg-light">
+        <div class="row align-items-center">
+            <div class="col-lg px-0">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/project_management.jpg') }}" alt="project management">
+            </div>
+            <div class="col-lg">
+                <h2>Project Management</h2>
+                <p>
+                    Let our expert team help you manage and guide
+                    your  maintenance projects from start to finish.
+                    We assists with planning, organising, motivating,
+                    and controlling resources & procedures in order
+                    to achieve all of the project goals. This involves
+                    managing budgets, resources and relationships,
+                    planning, and developing schedules to ensure
+                    your aicraft takes off on-time everytime.
+                    </p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

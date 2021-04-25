@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    About Us
+{% endblock %}
+
+{% block main %}
+    <section class="container border bg-light">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xl px-0">
+                <img class="img-fluid" alt="who are are" src="{{ url_for('static', filename='images/aircraft_3.jpg') }}">
+            </div>
+            <div class="col-xl">
+                <h2>Who We Are</h2>
+                <p>
+                    We are a Marketing & Project Management consultancy that
+                    aims to make aviation dealings a hassle-free experience.
+                    Rather than relying on passive forms of digital marketing,
+                    we pride ourselves on being a people’s company. Through
+                    our 40 years of aviation experience, we have extensive
+                    connections that span every part of the UAE, extending
+                    to Africa and the Gulf region. No matter the service
+                    or product your organisation provides, we will find the
+                    right customers for you. Whether you are an Airline,
+                    training provider, maintenance organisation, or a
+                    supplier – we already know someone.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row justify-content-center no-gutters">
+            <div class="col-12"><h2>Our Values</h2></div>
+            <div class="col-lg m-3 border bg-light">
+                <img class="img-fluid" alt="trust" src="{{ url_for('static', filename='images/trust.jpeg') }}">
+                <h3 class="px-3">Trust</h3>
+                <p class="px-3">
+                   Striving to build trust with our clients is vital to
+                   us. We do this by being fully transparent during the
+                   entire process in terms of costs, timeframes, and
+                   other expectations.
+                </p>
+            </div>
+            <div class="col-lg m-3 border bg-light">
+                <img class="img-fluid" alt="integrity" src="{{ url_for('static', filename='images/integrity.jpg') }}">
+                <h3 class="px-3">Integrity</h3>
+                <p class="px-3">
+                   We ensure that all communications with our clients
+                   is kept fully confidential. Therefore, you can rest
+                   knowing that any quote you provide us will not be
+                   shared with anyone.
+                </p>
+            </div>
+            <div class="col-lg m-3 border bg-light">
+                <img class="img-fluid" alt="customer commitment" src="{{ url_for('static', filename='images/customer_commitment.jpg') }}">
+                <h3 class="px-3">Commitment</h3>
+                <p class="px-3">
+                   You can rely on us to guide you through your entire
+                   project and beyond. Our vast network allows us to
+                   cater to all your needs, even if it is not within
+                   our current services.
+                </p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

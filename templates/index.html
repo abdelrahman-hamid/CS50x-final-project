@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div id="landing" class="position-relative p-0 m-0">
+        <span class="overlay_text"><strong><em>Making aviation hassle-free</em></strong></span>
+        <img id="home_img" class="img-fluid w-100 " src="{{ url_for('static', filename='images/aircraft_1.jpg') }}" alt="aicraft home image">
+    </div>
+
+    <section class="container border bg-light">
+        <div class="row align-items-center">
+            <div class="col-lg px-0">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/aircraft_2.jpg') }}" alt="aicraft at an airport">
+            </div>
+            <div class="col-lg">
+                <h2>Our Company at a Glance</h2>
+                <p>
+                    We are a marketing and project management consultancy
+                    that is striving to make aviation deals a hassle-free
+                    experience. We do this by utilising our vast network,
+                    accumulated through 40 years of aviation experience,
+                    to immediately contact the right customers for your
+                    business.
+                </p>
+                <div class="container text-center">
+                    <a class="btn btn-primary" href="/AboutUs">
+                        Discover more about us and how we work <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>What We Offer</h2>
+        <div class="row no-gutters justify-content-center">
+            <div class="col-lg m-3 border bg-light">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/marketing_management.jpg') }}" alt="marketing management">
+                <h3 class="px-3">Marketing Management</h3>
+            </div>
+            <div class="col-lg m-3 border bg-light">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/project_management.jpg') }}" alt="project management">
+                <h3 class="px-3">Project Management</h3>
+            </div>
+            <div class="col-lg m-3 border bg-light">
+                <img class="img-fluid" src="{{ url_for('static', filename='images/simulator.png') }}" alt="simulator">
+                <h3 class="px-3">B737 Simulator Training</h3>
+            </div>
+        </div>
+        <div class="container text-center">
+            <a class="btn btn-primary inline-block" href="/Services">
+                Find out more about our services <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+{% endblock %}
+
+
