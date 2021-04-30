@@ -16,10 +16,6 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.config["MAIL_USERNAME"] = os.getenv("MAIL_USERNAME")
 app.config["MAIL_PASSWORD"] = os.getenv("MAIL_PASSWORD")
 
-# Check if Python can get OS environment
-print(app.config["MAIL_USERNAME"])
-print(app.config["MAIL_PASSWORD"])
-
 app.config["MAIL_PORT"] = 587
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_USE_TLS"] = True
